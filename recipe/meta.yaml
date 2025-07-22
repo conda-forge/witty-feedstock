@@ -1,5 +1,5 @@
 {% set name = "witty" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/witty-{{ version }}.tar.gz
-  sha256: 1d5aca04de53d993f2daa546bf7afaa493b9a0bd080a8f5b330b6c6b9178cbd8
+  sha256: 3257167d8c9087880171c15bf2e131aef565dd74b157368c803ce5f4f1cb6269
 
 build:
   noarch: python
