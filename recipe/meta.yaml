@@ -1,13 +1,13 @@
 {% set name = "witty" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/witty-{{ version }}.tar.gz
-  sha256: 8ee71ba3321c77b64fd9d3a33c2f9ed2424cd7798ee22a4519687c2a88e0f108
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/witty-{{ version }}.tar.gz
+  sha256: f5bf3b201c3d59f6c583286255073f36b5e2574c15060508e250997a92b09208
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - cython >=3.0,<3.2
     - setuptools
     - nanobind >=0.2.8
+    - typing_extensions >=4.5.0
     - cxx-compiler
 
 test:
